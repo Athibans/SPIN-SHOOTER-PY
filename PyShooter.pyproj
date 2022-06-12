@@ -1,0 +1,110 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>bf28c0c8-8306-4c9f-b952-c56615547e3d</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>PyShooter.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PyShooter</Name>
+    <RootNamespace>PyShooter</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="bonus\doublehelperbonus.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bonus\helperbonus.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bonus\healthbonus.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="enemies\curvingenemy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="enemies\enemiesmanager.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="enemies\zigzagenemy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="gameobjects\explosion.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="gameobjects\helper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="weapons\armory.py" />
+    <Compile Include="bonus\bonus.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bonus\bonusmanager.py" />
+    <Compile Include="gameobjects\bullet.py" />
+    <Compile Include="weapons\crossweapon.py" />
+    <Compile Include="bonus\crossweaponbonus.py" />
+    <Compile Include="enemies\enemy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="game.py" />
+    <Compile Include="scenes\gameoverscene.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="scenes\gamescene.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="scenes\quitscene.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PyShooter.py" />
+    <Compile Include="scenes\scenes.py" />
+    <Compile Include="gameobjects\shield.py" />
+    <Compile Include="bonus\shieldbonus.py" />
+    <Compile Include="gameobjects\ship.py" />
+    <Compile Include="weapons\simpleweapon.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="gameobjects\backgroundstar.py" />
+    <Compile Include="gameobjects\texteffect.py" />
+    <Compile Include="timer.py" />
+    <Compile Include="scenes\titlescene.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="weapons\tripleweapon.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bonus\tripleweaponbonus.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="weapons\weapon.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bonus\" />
+    <Folder Include="C:\Users\kgud0t\source\repos\PyShooter\PyShooter\weapons\" />
+    <Folder Include="enemies\" />
+    <Folder Include="gameobjects\" />
+    <Folder Include="scenes\" />
+    <Folder Include="weapons\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
